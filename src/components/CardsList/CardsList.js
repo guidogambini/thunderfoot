@@ -1,7 +1,10 @@
 import Card from "../Card/Card";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
+import UseAppContext from "../../hooks/UseAppContext";
 
 const CardsList = () => {
+  const { postsData } = UseAppContext();
+
   const posts = {
     post_1: {
       date: "23-02-22",
@@ -32,13 +35,13 @@ const CardsList = () => {
     <section>
       <h2>Lorem Ipsum Dolor Sit Amet</h2>
       <ul>
-        {Object.keys(posts).map((post) => (
+        {Object.keys(postsData).map((post) => (
           <Card
-            title={posts[post].title}
-            image={posts[post].image}
-            type={posts[post].type}
-            date={posts[post].date}
-            key=""
+            title={postsData[post].title}
+            image={postsData[post].image}
+            type={postsData[post].type}
+            date={postsData[post].date}
+            key={postsData[post].title}
           />
         ))}
       </ul>
@@ -46,3 +49,5 @@ const CardsList = () => {
     </section>
   );
 };
+
+export default CardsList;

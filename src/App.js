@@ -1,8 +1,15 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import CardsList from "./components/CardsList";
 
-function App() {
-  return <div className="App">prueba!</div>;
-}
+const App = () => {
+  return (
+    <main className="App">
+      <Navbar />
+      {/* <Hero />
+      <CardsList /> */}
+    </main>
+  );
+};
 
 export default App;
