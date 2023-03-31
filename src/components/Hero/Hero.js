@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <section
-      className={styles.heroContainer}
+      className={styles.heroSection}
       style={{
         backgroundImage:
           "https://tf-frontend.netlify.app/images/v1/bgimage.png",

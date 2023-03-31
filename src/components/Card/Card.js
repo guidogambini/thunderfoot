@@ -1,13 +1,15 @@
+import styles from "./Card.module.css";
+
 const Card = ({ title, image, type, date }) => {
   return (
-    <li>
-      <div>
-        <img src={image} alt="" />
-        <span>{type}</span>
+    <li className={styles.card}>
+      <div className={styles.imageDivision}>
+        <img className={styles.cardImage} src={image} alt="" />
+        <span className={styles.cardType}>{type}</span>
       </div>
       <div>
-        <span>{date}</span>
-        <h3>{title}</h3>
+        <span className={styles.cardDate}>{date}</span>
+        <h3 className={styles.cardTitle}>{title}</h3>
       </div>
     </li>
   );

@@ -7,7 +7,7 @@ const App = () => {
     <main className="App">
       {/* <Navbar /> */}
       <Hero />
-      {/* <CardsList /> */}
+      <CardsList />
     </main>
   );
 };

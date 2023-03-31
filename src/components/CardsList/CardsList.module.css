@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;700&family=Work+Sans&display=swap');
+
+.cardsListSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding-top: 4rem;
+}
+
+.listTitle {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}

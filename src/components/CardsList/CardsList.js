@@ -1,11 +1,12 @@
 import Card from "../Card/Card";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 import UseAppContext from "../../hooks/UseAppContext";
+import styles from "./CardsList.module.css";
 
 const CardsList = () => {
-  const { postsData } = UseAppContext();
+  //const { postsData } = UseAppContext();
 
-  const posts = {
+  const postsData = {
     post_1: {
       date: "23-02-22",
       type: "Type A",
@@ -32,9 +33,9 @@ const CardsList = () => {
     },
   };
   return (
-    <section>
-      <h2>Lorem Ipsum Dolor Sit Amet</h2>
-      <ul>
+    <section className={styles.cardsListSection}>
+      <h2 className={styles.listTitle}>Lorem Ipsum Dolor Sit Amet</h2>
+      <ul className={styles.list}>
         {Object.keys(postsData).map((post) => (
           <Card
             title={postsData[post].title}
@@ -45,7 +46,7 @@ const CardsList = () => {
           />
         ))}
       </ul>
-      <PrimaryButton text="Our Blog" />
+      <PrimaryButton label="Our Blog" />
     </section>
   );
 };

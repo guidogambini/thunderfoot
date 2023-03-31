@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;700&family=Work+Sans&display=swap');
 
-.heroContainer {
+.heroSection {
     color: white;
     background-image: url("https://tf-frontend.netlify.app/images/v1/bgimage.png");
     background-size: cover;
@@ -22,12 +22,13 @@
 .heroSubtitle {
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
+    line-height: 25px;
     text-align: center;
     max-width: 94%;
 }
 
 @media screen and (min-width: 600px) {
-    .heroContainer {
+    .heroSection {
         gap: 3rem 0;
     }
     .heroTitle {

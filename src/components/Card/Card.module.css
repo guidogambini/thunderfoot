@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+
+.card {
+    list-style: none;
+    width: 20rem;
+    height: 15rem;
+}
+
+.imageDivision {
+    position: relative;
+}
+
+.cardImage {
+    width: 100%;
+    height: auto;
+}
+
+.cardType {
+    display: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: .8rem;
+    font-weight: 700;
+    background-color: #0E5E55;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: .5rem;
+    border-radius: 19px;
+}
+
+.cardDate {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.cardTitle {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        width: 15rem;
+        height: 25rem;
+    }
+    .cardType {
+        display: inline;
+    }
+}
