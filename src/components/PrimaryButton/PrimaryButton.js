@@ -1,5 +1,11 @@
+import styles from "./PrimaryButton.module.css";
+
 const PrimaryButton = ({ label, link }) => {
-  return <a href={link}>{label}</a>;
+  return (
+    <button className={styles.primaryButton}>
+      <a href={link}>{label}</a>
+    </button>
+  );
 };
 
 export default PrimaryButton;
