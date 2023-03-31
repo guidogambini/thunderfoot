@@ -21,8 +21,13 @@ const Navbar = () => {
   return (
     <div>
       {navbarData && (
-        <nav>
-          <img className={styles.logo} src={navbarData.logo} alt="" />
+        <nav className={styles.navbar}>
+          <img
+            className={styles.navbarLogo}
+            style={{ display: menuButtonClicked ? "none" : "inline" }}
+            src={navbarData.logo}
+            alt=""
+          />
           <div
             className={styles.mobileIcon}
             onClick={() => setMenuButtonClicked(!menuButtonClicked)}
@@ -30,7 +35,7 @@ const Navbar = () => {
             {menuButtonClicked ? <FaTimes /> : <RxHamburgerMenu />}
           </div>
           <ul
-            className={styles.menu}
+            className={styles.navbarMenu}
             style={{ left: menuButtonClicked ? "0" : "-100%" }}
           >
             {Object.keys(navbarData.menu).map((menu) => (

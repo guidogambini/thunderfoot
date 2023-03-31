@@ -5,7 +5,7 @@ import CardsList from "./components/CardsList/CardsList";
 const App = () => {
   return (
     <main className="App">
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
       <CardsList />
     </main>
