@@ -1,11 +1,8 @@
 import Card from "../Card/Card";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
-import UseAppContext from "../../hooks/UseAppContext";
 import styles from "./CardsList.module.css";
 
 const CardsList = () => {
-  //const { postsData } = UseAppContext();
-
   const postsData = {
     post_1: {
       date: "23-02-22",
