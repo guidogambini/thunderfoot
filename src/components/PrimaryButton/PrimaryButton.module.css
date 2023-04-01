@@ -1,16 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
-
-.primaryButton {
-    background-color: #0E5E55;
+.primaryButton, .blackPrimaryButton {
     width: 9rem;
     height: 3rem;
 }
 
-.primaryButton:hover {
+.primaryButton {
+    background-color: #0E5E55;
+}
+
+.blackPrimaryButton {
+    background-color: black;
+}
+
+.primaryButton:hover, .blackPrimaryButton:hover {
     background-color: #0F8B7D;
 }
 
-.primaryButton a {
+.link {
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     color: white;

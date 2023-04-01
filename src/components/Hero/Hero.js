@@ -1,7 +1,7 @@
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 import styles from "./Hero.module.css";
 
-const Hero = ({ title, subtitle, buttonLabel, buttonLink }) => {
+const Hero = ({ title, subtitle, image, buttonLabel, buttonLink }) => {
   const isSecondRender = JSON.parse(
     localStorage.getItem("applicationPreviouslyAccessed")
   );
@@ -22,13 +22,16 @@ const Hero = ({ title, subtitle, buttonLabel, buttonLink }) => {
     <section
       className={styles.heroSection}
       style={{
-        backgroundImage:
-          "https://tf-frontend.netlify.app/images/v1/bgimage.png",
+        backgroundImage: `url(${image})`,
       }}
     >
       <h1 className={styles.heroTitle}>{heroTitle}</h1>
       <p className={styles.heroSubtitle}>{subtitle}</p>
-      <PrimaryButton label={heroButtonLabel} link={buttonLink} />
+      <PrimaryButton
+        label={heroButtonLabel}
+        link={buttonLink}
+        isSecondRender={isSecondRender}
+      />
     </section>
   );
 };

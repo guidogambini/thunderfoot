@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;700&family=Work+Sans&display=swap');
-
 .heroSection {
     color: white;
-    background-image: url("https://tf-frontend.netlify.app/images/v1/bgimage.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,7 +7,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem 0;
+    gap: 24px 0;
+    padding: 0 15px;
     height: 34rem;
 }
 
@@ -29,7 +27,7 @@
 
 @media screen and (min-width: 600px) {
     .heroSection {
-        gap: 3rem 0;
+        gap: 32px 0;
     }
     .heroTitle {
         font-size: 3.5rem;

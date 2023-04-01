@@ -1,9 +1,15 @@
 import styles from "./PrimaryButton.module.css";
 
-const PrimaryButton = ({ label, link }) => {
+const PrimaryButton = ({ label, link, isSecondRender }) => {
   return (
-    <button className={styles.primaryButton}>
-      <a href={link}>{label}</a>
+    <button
+      className={
+        isSecondRender ? styles.blackPrimaryButton : styles.primaryButton
+      }
+    >
+      <a className={styles.link} href={link}>
+        {label}
+      </a>
     </button>
   );
 };

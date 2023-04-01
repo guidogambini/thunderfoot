@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Nanum+Gothic&display=swap');
-
 .navbar {
     display: flex;
-    padding: 1.5rem 0;
-    margin: 0 3rem;
+    padding: 1.5rem 3rem;
 }
 
 .mobileIcon {
@@ -25,19 +21,22 @@
 }
 
 .navbarMenu a {
+    font-family: 'Work Sans', sans-serif;
     color: black;
     padding: .5rem 1rem;
     border-radius: 1rem;
 }
 
-.navbarMenu a:hover {
-    color: white;
-    background-color: #0E5E55;
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 740px) {
     .navbar {
+        background: white;
+        width: 100%;
+        font-size: 1.1rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
         height: 1rem;
+        padding: 1.5rem 0;
     }
 
     .navbarLogo {
@@ -74,8 +73,16 @@
 
     .navbarMenu a {
         text-align: center;
-        text-transform: uppercase;
         padding: 2rem;
         width: 100%;
+        border-radius: 0;
+        border-bottom: 1px solid black;
+    }
+}
+
+@media screen and (min-width: 740px) {
+    .navbarMenu a:hover {
+        color: white;
+        background-color: #0E5E55;
     }
 }

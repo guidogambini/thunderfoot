@@ -1,24 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
-
 .card {
     width: 20rem;
-    height: 15rem;
+    height: 19rem;
 }
 
 .imageDivision {
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
     position: relative;
-}
-
-.cardImage {
+    height: 15rem;
     width: 100%;
-    height: auto;
+    margin-bottom: 1rem;
 }
 
-.cardType {
-    display: none;
+.deskCardType, .mobileCardType {
     font-family: 'Red Hat Display', sans-serif;
     font-size: .8rem;
     font-weight: 700;
+}
+
+.deskCardType {
     background-color: #0E5E55;
     color: white;
     position: absolute;
@@ -26,6 +27,20 @@
     left: 1rem;
     padding: .5rem;
     border-radius: 19px;
+}
+
+.mobileCardType {
+    margin-left: 1rem;
+}
+
+.mobileCardType::before {
+    display: inline-block;
+    content: "";
+    border-radius: 50%;
+    height: 0.75rem;
+    width: 0.75rem;
+    margin-right: .2rem;
+    background-color: #0E5E55;
 }
 
 .cardDate {
@@ -38,6 +53,7 @@
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
+    margin-top: .5rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -45,7 +61,8 @@
         width: 15rem;
         height: 25rem;
     }
-    .cardType {
-        display: inline;
+    .imageDivision {
+        background-position: center;
+        height: 18rem;
     }
 }

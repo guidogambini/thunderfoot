@@ -16,18 +16,26 @@ const App = () => {
     getAppData();
   }, []);
 
+  const { navbar, hero, body } = appData;
+
   return (
     <main className="App">
       {Object.keys(appData).length > 0 && (
         <>
-          <Navbar logo={appData.navbar.logo} menu={appData.navbar.menu} />
+          <Navbar logo={navbar.logo} menu={navbar.menu} />
           <Hero
-            title={appData.hero.title}
-            subtitle={appData.hero.subtitle}
-            buttonLabel={appData.hero.button_label}
-            buttonLink={appData.hero.button_link}
+            title={hero.title}
+            subtitle={hero.subtitle}
+            image={hero.bg_image}
+            buttonLabel={hero.button_label}
+            buttonLink={hero.button_link}
           />
-          <CardsList />
+          <CardsList
+            title={body.title}
+            list={body.posts}
+            buttonLabel={body.button_label}
+            buttonLink={body.button_link}
+          />
         </>
       )}
     </main>
