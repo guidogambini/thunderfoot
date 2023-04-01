@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
 import { FaTimes } from "react-icons/fa";
+import { RxHamburgerMenu } from "react-icons/rx";
 import styles from "./Navbar.module.css";
 
 const Navbar = ({ logo, menu }) => {
